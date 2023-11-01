@@ -1,0 +1,150 @@
+/* card.css */
+.jewelry-card {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 1%;
+    overflow: hidden;
+  }
+  
+  .text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #3c0067;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  button {
+    background-color: #d67b0c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #c06cf4;
+  }
+  
+  .image {
+    max-width: 50%;
+    padding: 20px;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  /* Add media queries for responsiveness */
+  @media (max-width: 768px) {
+    .jewelry-card {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .text {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    h1 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+  
+    p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  
+    button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    .image {
+      max-width: 80%;
+      padding: 10px;
+    }
+  }
+  
+  /* landingPage.css */
+  .landing-page {
+    text-align: center;
+    padding: 5% 10%;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #888;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next row on smaller screens */
+    justify-content: space-between;
+    margin-top: 3%;
+  }
+  
+  .card {
+    flex: 1;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 1%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    max-width: 48%; /* Limit card width on smaller screens */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Add spacing between the image and text */
+  }
+  
+  /* Media query for larger screens */
+  @media (min-width: 1200px) {
+    .card {
+      max-width: 40%;
+      /* Adjust card width for larger screens */
+    }
+  }
+  

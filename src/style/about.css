@@ -1,0 +1,157 @@
+/* about.css */
+
+/* Desktop styles */
+.section {
+    padding-left: 10%;
+    padding-top: 7%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .left-image {
+    flex: 1;
+    padding: 20px;
+    text-align: right;
+  }
+  
+  .left-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  .right-text {
+    flex: 2;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #888;
+  }
+  
+  /* Tablet styles */
+  @media screen and (max-width: 768px) {
+    .section {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  
+    .left-image,
+    .right-text {
+      flex: none;
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+  
+    .left-image img {
+      border-radius: 0;
+    }
+  
+    h2 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  }
+  
+  /* Mobile styles */
+  @media screen and (max-width: 480px) {
+    h2 {
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  }
+  
+  /* Existing styles */
+  /* ... */
+ /* about.css */
+
+/* Desktop styles */
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .left-text {
+    flex: 2;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .right-image {
+    flex: 1;
+    padding: 20px;
+    text-align: right;
+  }
+  
+  .right-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  /* Tablet styles */
+  @media screen and (max-width: 768px) {
+    .section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-text,
+    .right-image {
+      flex: none;
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+  
+    .right-image img {
+      border-radius: 0;
+    }
+  
+    h2 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  }
+  
+  /* Mobile styles */
+  @media screen and (max-width: 480px) {
+    h2 {
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  }
+  
+  /* Existing styles */
+  /* ... */
+  
