@@ -1,13 +1,14 @@
 import React from 'react'
 import '../style/home.css'
-import sideimage from '../image/pic1.jpg'
-import earring from '../image/pic2.jpg'
-import ring from '../image/ring.jpg'
-import jewllery from '../image/pic3.jpg'
+import sideimage from '../image/ring-3.jpg'
+import earring from '../image/ear-1.jpg'
+import ring from '../image/ring-1.jpg'
+import jewllery from '../image/set-1.jpg'
+
 
 function Home() {
   return (
-    <>
+   <>
       <div className="jewelry-card">
         <div className="text">
           <h1>Welcome to World of Jewelry </h1>
@@ -43,8 +44,18 @@ function Home() {
             <h2>Custom Creations</h2>
             <p>Create a jewelry piece as unique as you are. Our customization options allow you to design a one-of-a-kind masterpiece that reflects your personality and style.</p>
           </div>
+          
+          <div className="card">
+          <img src={jewllery} alt='sample'/>
+            <h2>Custom Creations</h2>
+            <p>Create a jewelry piece as unique as you are. Our customization options allow you to design a one-of-a-kind masterpiece that reflects your personality and style.</p>
+          </div>
+
+
+
         </div>
       </div>
+   
 </>
       )
 }

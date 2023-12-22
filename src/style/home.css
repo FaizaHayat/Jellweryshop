@@ -16,27 +16,30 @@
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #3c0067;
+    color: #ffffff;
+    text-shadow: 3px 5px 10px #888;
   }
   
   p {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 20px;
     color: #666;
   }
   
   button {
-    background-color: #d67b0c;
-    color: #fff;
+    background-color: #ffaa00;
+    color: #000000;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
+    box-shadow: 4px 5px 10px rgb(168, 168, 168);
     cursor: pointer;
     transition: background-color 0.2s;
   }
   
   button:hover {
-    background-color: #c06cf4;
+    background-color: #c7009c;
+    color: #ddd;
   }
   
   .image {
@@ -82,69 +85,83 @@
       padding: 10px;
     }
   }
-  
   /* landingPage.css */
+
+/* General styles for larger screens */
+.landing-page {
+  text-align: center;
+  padding: 5% 10%;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #888;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+
+.card {
+  flex: 1;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 1%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  max-width: 48%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  font-size: 12px;
+  color: #666;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
   .landing-page {
-    text-align: center;
-    padding: 5% 10%;
-  }
+    padding: 10% ;
   
+  }
+
   h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 28px;
+    margin-bottom: 15px;
   }
-  
-  p {
-    font-size: 18px;
-    color: #888;
-  }
-  
-  .card-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap to the next row on smaller screens */
-    justify-content: space-between;
-    margin-top: 3%;
-  }
-  
-  .card {
-    flex: 1;
-    background-color: #f7f7f7;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 0 1%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
-    max-width: 48%; /* Limit card width on smaller screens */
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
+
   p {
     font-size: 16px;
-    color: #666;
   }
-  
-  .card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 20px; /* Add spacing between the image and text */
+
+  .card {
+    width: 75%;
+    margin: 0 3% 3% 0;
   }
-  
-  /* Media query for larger screens */
-  @media (min-width: 1200px) {
-    .card {
-      max-width: 40%;
-      /* Adjust card width for larger screens */
-    }
-  }
-  
+}

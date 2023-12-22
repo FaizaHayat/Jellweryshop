@@ -1,8 +1,15 @@
 // About.js
 import React from 'react';
 import '../style/about.css'; // Import your CSS file for styling
-import pic from '../image/pic1.jpg'
+import pic from '../image/set-1.jpg'
+
+
+
 function About() {
+
+
+
+
   return (
     <>
       <div className="section">

@@ -1,23 +1,19 @@
 /* Navbar.css */
 .navbar {
+  background-color: rgba(255, 0, 234, 0.206);
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     align-items: center;
-    background-color: #a200ff;
+
    
   }
-  
-  .logo a {
-    
-    color: white;
-    text-decoration: none;
-    font-size: 26px;
-  }
-  
+
   .menu-toggle {
     display: none;
+
     flex-direction: column;
     cursor: pointer;
   }
@@ -39,13 +35,18 @@
   .menu li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
   }
-  
+  .menu li a:hover{
+    font-size: 21px;
+text-decoration: underline;
+
+  }
   @media (max-width: 768px) {
     .menu-toggle {
       display: flex;
       padding: 0px;
+   
     }
     .menu.active {
         display: flex;
@@ -56,13 +57,12 @@
       display: none;
       flex-direction: column;
       position: absolute;
-      top: 92px;
-      left: 0px;
-     
-      background-color: #9176aa;
+      top: 110px;
+      background: linear-gradient(rgb(58, 0, 72),rgb(48, 0, 48));
       width: 100%;
       z-index: 1;
     }
+    
   
     .menu.active {
       display: flex;
